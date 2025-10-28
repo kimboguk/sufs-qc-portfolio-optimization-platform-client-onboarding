@@ -4,6 +4,9 @@ import path from 'path'
 
 export default defineConfig({
   base: '/sufs-qc-portfolio-optimization-platform-client-onboarding/',
+  build: {
+    outDir: 'docs'  // 추가
+  },
   plugins: [react()],
   resolve: {
     alias: {
