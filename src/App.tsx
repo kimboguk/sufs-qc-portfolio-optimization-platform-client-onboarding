@@ -3,7 +3,7 @@ import OnboardingPage from './pages/OnboardingPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/sufs-qc-portfolio-optimization-platform-client-onboarding">
       <Routes>
         <Route path="/onboarding" element={<OnboardingPage />} />
         <Route path="/" element={<div className="text-center p-10">
