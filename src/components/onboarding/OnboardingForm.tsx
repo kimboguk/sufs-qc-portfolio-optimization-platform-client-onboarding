@@ -232,7 +232,7 @@ export function OnboardingForm() {
         </div>
 
         {showExitConfirm && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-6 max-w-sm mx-4 shadow-lg">
               <h3 className="text-lg font-bold text-gray-900 mb-4">온보딩을 나가시겠습니까?</h3>
               <p className="text-gray-600 mb-6">지금까지 작성한 내용은 저장되지 않습니다.</p>
