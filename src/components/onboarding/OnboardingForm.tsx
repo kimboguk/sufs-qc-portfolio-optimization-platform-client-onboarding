@@ -220,7 +220,9 @@ export function OnboardingForm() {
         </div>
 
         <div className="flex justify-between gap-4">
-          <Button variant="outline" size="lg" onClick={handlePrevious} disabled={currentStep === 1} className="px-8 py-4 text-lg">← 이전</Button>
+          {currentStep > 1 && (
+    <Button variant="outline" size="lg" onClick={handlePrevious} className="px-8 py-4 text-lg">← 이전</Button>
+  )}
           <div className="flex-1" />
           {currentStep < totalSteps ? (
             <Button variant="primary" size="lg" onClick={handleNext} className="px-8 py-4 text-lg">다음 →</Button>
